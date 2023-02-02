@@ -24,7 +24,7 @@ Se trata de um fomulário de pesquisa.
 
 <ul>
 <li>
-<a href="https://luizhendges.github.io/freeCodeCamp-Form/" target="_blank">Visite o projeto online
+<a href="https://LuizHendges.github.io/freeCodeCamp-Form" target="_blank">Visite o projeto online
 </a>
 </li>
 </ul>
