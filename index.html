@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <title>freeCodeCamp Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">freeCodeCamp Formulário de Pesquisa</h1>
+    <p id="description">
+      Obrigado por dedicar seu tempo para nos ajudar a melhorar a plataforma
+    </p>
+    <form id="survey-form">
+      <fieldset>
+        <label for="name" id="name-label"
+          >Nome
+          <input id="name" type="text" placeholder=" Insira seu Nome" required
+        /></label>
+        <label for="email" id="email-label"
+          >Email
+          <input
+            id="email"
+            type="email"
+            placeholder=" Insira seu Email"
+            required
+        /></label>
+        <label for="number" id="number-label"
+          >Idade (opcional)
+          <input
+            id="number"
+            type="number"
+            placeholder=" Idade"
+            min="13"
+            max="120"
+        /></label>
+        <p class="current-role">Qual opção melhor descreve sua função atual?</p>
+        <select id="dropdown">
+          <option value="0" disabled selected>
+            Selecione sua função atual
+          </option>
+          <option value="Student">Estudante</option>
+          <option value="Job">Trabalho em tempo integral</option>
+          <option value="Learner">Aprendiz em tempo integral</option>
+          <option value="PreferNo">Prefiro não dizer</option>
+          <option value="Other">Outro</option>
+        </select>
+      </fieldset>
+      <fieldset>
+        <p class="favority">Você recomendaria o freeCodeCamp a um amigo?</p>
+        <div class="favority-button>">
+          <label
+            ><input type="radio" name="recommend" value="ofCouse" /> Com
+            certeza</label
+          >
+          <label class="favority2"
+            ><input type="radio" name="recommend" value="maybe" /> Talvez</label
+          >
+          <label class="favority3"
+            ><input type="radio" name="recommend" value="notSure" /> Não</label
+          >
+        </div>
+      </fieldset>
+      <fieldset>
+        <p>Qual é o seu recurso favorito do freeCodeCamp?</p>
+        <select class="botton-recurse">
+          <option disabled select value="0">Selecione uma Opção</option>
+          <option value="challenges-recurse">Desafios</option>
+          <option value="projects-recurse">Projetos</option>
+          <option value="community-recurse">Comunidade</option>
+          <option value="open-source-recurse">Código Aberto</option>
+        </select>
+        <p>
+          O que você gostaria de ver melhorado? (Marque todos os que se aplicam)
+        </p>
+        <div class="button-checkbox">
+          <label
+            ><input type="checkbox" value="project-front-end" /> Projetos de
+            front-end</label
+          >
+          <label
+            ><input type="checkbox" value="project-back-end" /> Projetos de
+            back-end</label
+          >
+          <label
+            ><input type="checkbox" value="data-visualization" /> Visualização
+            de dados</label
+          >
+          <label><input type="checkbox" value="challenges" /> Desafios</label>
+          <label
+            ><input type="checkbox" value="open-source-community" /> Comunidade
+            de código aberto</label
+          >
+          <label>
+            <input type="checkbox" value="gitter-help" /> Salas de ajuda do
+            Gitter</label
+          >
+          <label><input type="checkbox" value="videos" /> Vídeos</label>
+          <label
+            ><input type="checkbox" value="city-meetups" /> Encontros da
+            cidade</label
+          >
+          <label><input type="checkbox" value="wiki" /> Wiki</label>
+          <label><input type="checkbox" value="forum" /> Fórum</label>
+          <label
+            ><input type="checkbox" value="additional-courses" /> Cursos
+            adicionais</label
+          >
+        </div>
+
+        <p>Algum comentário ou sugestão?</p>
+        <textarea
+          class="text-area"
+          placeholder="Digite seu comentário aqui..."
+          rows="6"
+        ></textarea>
+        <input type="submit" id="submit" />
+      </fieldset>
+    </form>
+  </body>
+</html>
